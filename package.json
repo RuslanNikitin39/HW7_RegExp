@@ -1,0 +1,21 @@
+{
+  "name": "hw7_regexp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "lint": "eslint",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RuslanNikitin39/HW7_RegExp.git"
+  },
+  "author": "RW_Nik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RuslanNikitin39/HW7_RegExp/issues"
+  },
+  "homepage": "https://github.com/RuslanNikitin39/HW7_RegExp#readme"
+}
