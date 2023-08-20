@@ -1,13 +1,13 @@
 import Validator from '../app';
 
 test.each([
-  ['Name12345abc', 'Отказ: имя пользователя содержит более 3 подряд идущих цифр!'],
-  ['NameNik_', 'Отказ: имя пользователя не сответствует требованиям!'],
-  ['Name56rt', 'Валидация пройдена успешно!'],
-  ['123NoName-', 'Отказ: имя пользователя не сответствует требованиям!'],
-  ['Name5566988', 'Отказ: имя пользователя не сответствует требованиям!'],
-  ['МоеИмя10GG', 'Отказ: имя пользователя не сответствует требованиям!'],
-  ['Bob', 'Валидация пройдена успешно!'],
+  ['Name12345abc', false],
+  ['NameNik_', false],
+  ['Name56rt', false],
+  ['123NoName-', false],
+  ['Name5566988', false],
+  ['МоеИмя10GG', false],
+  ['Bob', true],
 ])('testing of correct username %s', (userName, returned) => {
   const user = new Validator(userName);
   expect(user.validateUsername()).toBe(returned);
